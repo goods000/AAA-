@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">  	
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style>
+		*{margin: 0px;padding: 0px;}
+		.bottom_nav dl dd:nth-child(1) a .dier {display: block !important;}
+		.bottom_nav dl dd:nth-child(1) a .diyi {display: none !important;}
+		.bottom_nav dl dd:nth-child(1) a span {color: #947DB3;}
+	</style>
+	<body>
+		<header>
+			<h2>总资产</h2>
+			<p>AIGK+USDT的总和</p>
+			<div class="">
+				<span>￥</span><b>1,23454,4454</b>
+			</div>
+		</header>
+		
+		<div class="body">
+			<p class="yong">常用应用</p>
+			<div class="thing">
+				<ul>
+					<a href="chong.html">
+						<li>
+							<img src="img/cb.png"/>
+							<p>充币</p>
+						</li>
+					</a>
+					<a href="">
+						<li>
+							<img src="img/dui.png"/>
+							<p>兑换</p>
+						</li>
+					</a>
+					<a href="withdraw.html">
+						<li>
+							<img src="img/tb.png"/>
+							<p>提币</p>
+						</li>
+					</a>
+				</ul>
+			</div>
+			<!--轮播图-->
+			  <div class="swiper-container swiper-container_sy">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide"><img src="img/bo.png"/></div>
+			            <div class="swiper-slide"><img src="img/bo.png"/></div>
+			            <div class="swiper-slide"><img src="img/bo.png"/></div>
+			        </div>
+			        <div class="swiper-pagination"></div>
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+			    </div>
+		</div>
+		
+		<div class="buy_box">
+			<p class="yong">购买矿机</p>
+			<div class="buy">
+				<img src="img/meal.png"/>
+				<div class="buy_i">
+					<p>小矿机 【最高收益:3倍】</p>
+					<div class="buy_title">
+						<p><i>挖矿算力:</i> <b>0.2%</b>/天</p>
+						<p><i>购买金额:</i> 500USDT</p>
+					</div>
+				</div>
+				<span><a href="">购买</a></span>
+			</div>
+			<div class="buy">
+				<img src="img/meal.png"/>
+				<div class="buy_i">
+					<p>中矿机 【最高收益:4倍】</p>
+					<div class="buy_title">
+						<p><i>挖矿算力:</i> <b>0.25%</b>/天</p>
+						<p><i>购买金额:</i> 5000USDT</p>
+					</div>
+				</div>
+				<span><a href="">购买</a></span>
+			</div>
+			<div class="buy">
+				<img src="img/meal.png"/>
+				<div class="buy_i">
+					<p>大矿机 【最高收益:5倍】</p>
+					<div class="buy_title">
+						<p><i>挖矿算力:</i> <b>0.3%</b>/天</p>
+						<p><i>购买金额:</i> 50000USDT</p>
+					</div>
+				</div>
+				<span><a href="">购买</a></span>
+			</div>
+		</div>
+	    
+	    
+	    <!--底部导航栏-->
+	    <div id="footer"></div>
+	</body>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        loop: true,
+        autoplay: 3500,
+        autoplayDisableOnInteraction: false
+        
+    });
+    
+    //导航栏切换
+     var $div_li = $('#nav ul li');
+        $('#nav ul li').click(function(){
+            $(this).addClass("navTitle").siblings().removeClass("navTitle"); 
+                var index =  $div_li.index(this);  
+            $("div.tab > div").eq(index).show().siblings().hide(); 
+		})
+</script>	
+</html>

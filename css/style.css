@@ -1,0 +1,124 @@
+*{margin: 0px;padding: 0px;font-size: 14px;color: #000;font-family: "microsoft yahei";list-style: none;text-decoration: none;}
+.layui-layer-dialog .layui-layer-content{color: #333;}
+input,button,select{outline:none;-webkit-appearance: none;}
+ul li{list-style: none;float: left;}
+body{background: #f5f5f5;}
+
+/*头部*/
+.h1{color:#fff;text-align: center;font-weight: 500;font-size: 20px;padding:10px 0;background: #120C1A;}
+.h1 span{font-size: 20px;color: #fff;}
+.h1 s{font-size: 18px;color: #fff;}
+.h1 a{position: absolute;font-size: 14px;color: #fff;right: 10px;top:15px;width: 80px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.h1 a span{color: #fff;font-size: 14px;}
+.h1 button{position: absolute;top:13px;left: 10px;background: none;border: 0px;font-size: 20px;color: #fff;}
+
+/*首页*/
+header{background-image: url(../img/lunbo.png);background-repeat: no-repeat;background-size: 100% 100%;padding: 15px;}
+header h2{margin-top: 45px;font-size: 18px;color: #fff;}
+header p{margin-top: 5px;font-size: 10px;color: #fff;}
+header div{margin: 15px 0 25px;}
+header div span{font-size: 10px;color: #fff;}
+header div b{font-size: 20px;color: #fff;}
+.body{background: #fff;border-radius: 10px;margin-top: -15px;padding-bottom: 20px;}
+.yong{color: #000;font-size: 16px;font-weight: bold;padding: 15px;}
+.thing ul{width: 100%;}
+.thing ul li{width: 33.33%;display: flex;flex-direction: column;align-items: center;}
+.thing ul li img{width: 27%;margin-bottom: 5px;}
+.thing ul li p{font-size: 12px;color: #5A5A5C;}
+.buy_box{background: #FFFFFF;margin-top: 10px;padding-bottom: 20px;}
+.buy{display: flex;flex-direction: row;align-items: center;padding:0 10px;}
+.buy img{width: 20%;}
+.buy .buy_i{width: 60%;margin-left: 2%;}
+.buy_title p i{font-style: normal;font-size: 12px;color: #B3B3B3;}
+.buy_title p b{color: #BD15D4;font-size: 16px;}
+.buy a{color: #fff;}
+.buy span{
+	background: -webkit-linear-gradient(left,#D02FE1,#430FD6); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(left,#D02FE1,#430FD6); /* Opera 11.1-12.0 */ 
+    background: -moz-linear-gradient(left,#D02FE1,#430FD6); /* Firefox 3.6-15 */
+    background: linear-gradient(left,#D02FE1,#430FD6); /* 标准语法 */
+   	height: 25px;line-height: 25px;text-align: center;color: #fff;width: 15%;border-radius: 15px;margin-top: 8%;
+}
+
+/*充币*/
+.charge{background: url(../img/licai_header3.png);background-size: 100% 100%;background-repeat:no-repeat;width: 100vw;height: 100vh;text-align: center;}
+
+.charge_bbj{width: 85%;height: 80%;background: #fff;background-size: 100% 100%;background-repeat:no-repeat;margin: auto;top:10%;position: relative;border-radius: 10px;}
+
+.chas_lianjie input{width: 100%;background: #993EFF;border-radius:5px;box-sizing: border-box;color: #f5f5f5;word-wrap:break-word;height: 40px;font-size: 12px;padding:5px;display: block;border: 0px;}
+.chas_lianjie a{width: 100%;display: block;background: #993eff;color: #fff;text-align: center;height: 50px;line-height: 50px;}
+.chas_lianjie{padding: 20px;box-sizing: border-box;}
+.chas_lianjie h2{text-align: center;font-size: 18px;letter-spacing: 1px;font-weight: 500;margin: 20px;}
+.qr_btn{background: #993EFF;color:#fff;border-radius:15px;background-size: 100% 100%;background-repeat:no-repeat;padding: 10px;margin: 10% 17%;
+width: 60%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 15px;letter-spacing: 1px;}
+/*充币记录*/
+.tixn_record h2{font-size: 14px;font-weight: 500;}
+.tixn_record h2 u{font-size:12px;}
+.tixn_record em{clear: both;}
+.tixn_record li{width:100%;margin: auto;padding:15px 10px;box-sizing: border-box;border-bottom: 1px solid #333;}
+.tixn_record p{float: left;margin: 5px 0;}
+.tixn_record span{clear:both;display: block;}
+.mingxi .ps{float:right;}
+.mingxi .ps u{color: #333254;}
+.mingxi .ps s{color: red;}
+.mingxi span{clear:both;float: left;}
+.mingxi em{color: #333;}
+.mingxi h2{float: left;}
+.mingxi h2 u{color: #333254;}
+.tixn_record i{float: right;font-style: normal;font-size: 16px;color: #993eff;margin-top:5px;}
+
+/*提币*/
+.bi a{text-decoration: none;}	
+.bi .ulist li{width: 100%;}
+.bi input{margin: 5px 0px 15px 0px;width:100%;color: #fff;box-sizing: border-box;font-size: 14px;padding: 15px;border:0px;margin: 5px 0 10px;background:#000;border-radius: 5px;}
+.bi select{display: block;width:100%;border-radius: 0px;color: #fff;padding: 15px;border:0px;margin: 5px 0 10px;background:#000;border-radius: 5px;text-align: left;}
+.bi i{color: #000;font-size: 14px;font-style: normal;padding:0px;margin-bottom:5px;margin-top:10px;text-align: left;}
+.bi{width: 100%;padding: 0px;left: 0px;background: #fff;}
+.shouji_1{margin-top:0px;padding:20px;box-sizing: border-box;padding-bottom: 35px;}
+.bi input:focus{box-shadow: 0px 0px 0px #333254;}
+.bi input::-webkit-input-placeholder{color: #ccc !important;}
+.bi form a{color: #333;}
+.bi .locgin_i input[type="submit"]{padding-left: 0px;padding: 10px;color: #fff;}
+.tijiao{
+	background: #185cc7 !important; /* 标准的语法 */	
+	color:#FFFFFF !important;font-size: 16px !important;padding: 10px 45px !important;}
+.bi p{background: #000;padding: 10px;box-sizing: border-box;color: #993EFF;border-radius: 0 0 5px 5px;margin-top: -15px;margin-bottom: 10px;}
+.bi p span{color: #fff}
+#J_getCode{width: 22%;height:44px;display: block;position: absolute;margin-top:-62px;right:10%;line-height: 44px;color:#993eff;}
+#J_resetCode{display:none;width:20%;height:44px;position: absolute;margin-top:-62px;right:10%;line-height: 44px;font-size: 12px;color:#993eff;}
+#J_second{color: #993eff;font-size:12px;}
+.tiijiao{background: #993EFF !important;width: 100% !important;text-align:center;display:block;border-radius: 5px !important;padding: 10px 0 !important;margin:auto !important;margin-top:20px!important;}
+
+/*矿池*/
+.mine_top{height:180px;background-image: url(../img/mine_top.png);background-repeat: no-repeat;background-size: 100% 100%;}
+.mine_box{padding:15px 10px 10px;margin:1% 4% 4%;background-image: url(../img/mine_middle.png);background-repeat: no-repeat;background-size: 100% 100%;}
+.mine_box p{color: #fff;font-size: 15px;}
+.mine_box .money{margin: 5px 0;}
+.mine_box .money span,b{color: #fff;font-size: 16px;}
+.mine_box .money b{font-size: 18px;}
+.mine_box .yi{border-top: 1px solid #dbdbdb;padding-top: 7px;display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
+.mine_box span{color: #fff;font-size: 10px;}
+.suan{display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
+.suan .buy_title:nth-child(1){margin-left: 0px;}
+.suan .buy_title{width: 40%;margin-left: 25px;}
+
+/*钱包*/
+.suocang_ul li{width: 90%;padding:15px;border-radius: 10px;position:relative;box-sizing: border-box;margin:10% 5%;
+background:#fff;text-align: center;}
+.suocang_ul li p{font-size: 1.3rem;display: flex;justify-content:space-between;}
+.suocang_ul li p img{width: 15vw;height:15vw;display:block;}
+.suocang_ul li h1{color: #993EFF;font-size: 1.8rem;font-weight: 500;margin-top:10px;}
+.suocang_ul li div span:nth-child(1){border-right: 1px solid #333;}
+.suocang_ul li div span{width:50%;display: block;text-align: center;display: flex;justify-content:center;}
+.suocang_ul li div{margin:10px 0;display: flex;border-top:1px solid #333;padding: 15px 0;}
+.suocang_ul li div img{width: 5vw;height:4.5vw;display: block;margin-right: 5px;}
+.suocang_a{width: 40%;background: #42c2a8;border-radius: 50px;display: block;margin: auto;text-align:center;padding: 10px 0;color: #fff;position: absolute;margin-top:3%;left:30%;}
+/*存入*/
+.tixian{padding: 20px;box-sizing: border-box;padding-bottom: 70px;width: 94%;margin: auto;}
+.exchange_in p{padding: 5px 0;}
+.exchang_di{box-sizing: border-box;border-radius: 5px;}
+.exchang_di p{display: flex;justify-content:space-between;background:#131312;}
+.exchang_di p span{color: #993EFF ;}
+.exchange_in h1{margin-top:10px;font-weight: 500;margin-bottom: 5px;}
+.exchange_in input{width:100%;border-radius: 0px;color: #fff;padding: 15px;border:0px;margin-top: 0px;background:#131312;border-radius: 5px;}
+.exchange_in select{width:100%;border-radius: 0px;color: #fff;padding: 15px;border:0px;margin-top: 0px;background:#131312;border-radius: 5px;text-align: left;}
