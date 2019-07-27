@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+    <script type="text/javascript" src="js/public.js" ></script>
+</head>
+<style>
+	.screen-right .container{padding: 0px !important;}
+	.h1{background: none;}
+	#nav{padding-top: 20px;}
+	#nav ul{width: 65% !important;margin-left: 17% !important;background: #F4E5FF !important;}
+	.navContent{color: #6A14FF;}
+	#biao1{margin-bottom: 10%;color: #8B1FDC;font-weight: bold;}
+	.yao{margin-bottom: 10%;color: #8B1FDC;background: #F4E5FF;letter-spacing: 5px;padding:3% 5%;font-size: 20px;font-weight: bold;}
+</style>
+<body style="width: 100vw;">
+	<div class="charge1">
+		<h1 class="h1"><button class="iconfont icon-xiangzuo1" onclick="javascript:window.history.back(-1);"></button></h1>
+		<div class="charge_bbj1">
+		<div id="nav">
+			<ul>
+				<li class="navTitle li"><span class="navContent ">左区二维码</span></li>
+				<li><span class="navContent">右区二维码</span></li>
+			</ul>
+		</div>
+		<div  class="recharge" style="width: 70%;padding:10% 0;margin: auto;"></div>
+		<div class="chas_lianjie">
+			<p id="biao1">我的邀请码</p>
+			<span class="yao">000001</span>	
+		</div>
+				
+		</div>
+	</div>
+<script src="js/jquery.qrcode.min.js"></script>
+
+<script type="text/javascript">
+	var $div_li = $('#nav ul li');
+	$('#nav ul li').click(function() {
+		$(this).addClass("navTitle").siblings().removeClass("navTitle");
+		var index = $div_li.index(this);
+		$("div.tab > div").eq(index).show().siblings().hide();
+	})
+
+    jQuery('.recharge').qrcode({
+        render: "canvas", //也可以替换为table
+        width: 80,
+        height: 80,
+        text: "{$address}"
+    });
+
+    $('canvas').css({
+        'width': '80%',
+        'display': 'block',
+        'margin': 'auto',
+        'position':'relative',
+        'top':'0vh',
+        'padding': '10px',
+    });
+
+</script>
+	<script>
+		function copyUrl2(){
+			var Url2=document.getElementById("biao1");
+			 Url2.select(); // 选择对象
+			document.execCommand("Copy"); // 执行浏览器复制命令
+			 alert("已复制好，可贴粘。");
+		 }
+	</script>
+</body>
+</html>
