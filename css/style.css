@@ -34,7 +34,7 @@ body{background: #f5f5f5;}
 box-sizing: border-box;font-size: 14px;box-sizing: border-box;}
 .login input::-webkit-input-placeholder{color: #ABA8B3 !important;}
 .locgin_i{display: flex;flex-direction: row;align-items: center;border-bottom: 1px solid #dbdbdb;}
-.locgin_i img{width: 8%;}
+.locgin_i img{width: 6%;}
 .locgin_i input{width:74%;outline: none;background: none;border: 0px;padding:20px 15px;color: #333;}
 .error{margin-top: 10px;color:#000 ;position: relative; overflow: hidden;display: flex;justify-content: flex-end;}
 .error span{color: #ABA8B3;font-size: 14px;white-space: nowrap; text-overflow: ellipsis; -webkit-box-orient: vertical; overflow: hidden;width:90px;}
@@ -49,7 +49,7 @@ vertical-align: middle;z-index: 666;margin-right:5px;margin-bottom: 3px;}
 /*首页*/
 header{background-image: url(../img/lunbo.png);background-repeat: no-repeat;background-size: 100% 100%;padding: 15px;}
 header h2{margin-top: 45px;font-size: 18px;color: #fff;}
-header p{margin-top: 5px;font-size: 10px;color: #fff;}
+header p{margin-top: 5px;font-size: 10px;color: #B7ABD6;}
 header div{margin: 15px 0 25px;}
 header div span{font-size: 10px;color: #fff;}
 header div b{font-size: 20px;color: #fff;}
@@ -161,7 +161,7 @@ width: 60%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size
 .bi p span{color: #000}
 #J_getCode{width: 22%;height:44px;display: block;position: absolute;margin-top:-62px;right:10%;line-height: 44px;color:#993eff;}
 #J_resetCode{display:none;width:20%;height:44px;position: absolute;margin-top:-62px;right:10%;line-height: 44px;font-size: 12px;color:#993eff;}
-#J_second{color: #993eff !important;font-size:12px;}
+#J_second{color: #993eff !important;font-size:14px;}
 .tiijiao{
 	background: -webkit-linear-gradient(left, #D02FE1 , #430FD6) !important; /* Safari 5.1 - 6.0 */
 	background: -o-linear-gradient(right, #D02FE1, #430FD6) !important; /* Opera 11.1 - 12.0 */
