@@ -97,6 +97,11 @@
 </body>
 <script src="https://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
+	$("input").on("blur",function(){
+        var toFix=$(this).offset().top;
+        window.scroll(0,toFix);//失焦后强制让页面归位
+    });
+	
 	var $div_li = $('#nav ul li');
 	$('#nav ul li').click(function() {
 		$(this).addClass("navTitle").siblings().removeClass("navTitle");

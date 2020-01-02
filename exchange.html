@@ -22,13 +22,13 @@
 			<div class="exchange_top">
 				<div class="exchange_s">
 					<div class="exchange_title">
-						<span><img src="img/USDT.png"/><span>USDT</span><img src="img/select.png" class="select"/></span>
+						<span class="map_1" did="1"><img id="map_1" src="img/USDT.png"/><span class="name_1">USDT</span><img src="img/select.png" class="select"/></span>
 						<p>余额:1002.34435</p>
 					</div>
 					<img src="img/huzhuan.png" class="huzhuan"/>
 					<div class="exchange_title">
-						<span><img src="img/AIGC.png"/><span>AIGC</span><img src="img/select.png" class="select"/></span>
-						<p>余额:1002.34435</p>
+						<span class="map_2" did="2"><img id="map_2" src="img/AIGC.png"/><span class="name_2">AIGC</span><img src="img/select.png" class="select"/></span>
+						<p>余额:1002.35</p>
 					</div>
 				</div>
 				<div class="text">
@@ -96,8 +96,33 @@
 				</div>
 			</div>
 		</div>
+	
+	
 	</body>
 	<script type="text/javascript">
+//		$(".huzhuan").click(function(){
+//			var n = $(this).next();
+//	        var p = $(this).prev();
+//	        $(this).before(n);
+//	        $(this).after(p);
+//		})
+
+		$(".huzhuan").click(function(){
+	        var n = $(".name_1").html();
+	        var img_1 = $("#map_1").attr('src');
+	        console.log(img_1)
+	        var value_1 = $(".value_a").html();
+	        var p = $(".name_2").html();
+	        var img_2 = $("#map_2").attr('src');
+	        var value_2 = $(".value_b").html();
+	        $(".name_1").html(p);
+	        $(".name_2").html(n);
+	        $("#map_1").attr('src',img_2);
+	        $("#map_2").attr('src',img_1);
+	        $(".value_a").html(value_2);
+	        $(".value_b").html(value_1);
+	    })
+		
 		$(".select").click(function(){
 			$("#mo").css("display","block");
 		})
